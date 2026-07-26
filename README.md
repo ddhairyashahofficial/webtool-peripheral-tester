@@ -1,86 +1,113 @@
-# Peripheral Tester
+# Peripheral Tester Pro
 
-A browser-based peripheral diagnostics and testing tool built with React, TypeScript, Vite, and Tailwind CSS.
+Professional browser-based hardware diagnostic suite.
 
-## Live Demo
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-7-purple)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-3-38BDF8)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-https://ddhairyashahofficial.github.io/peripheral-tester/
+---
 
 ## Features
 
-### Keyboard Testing
+✅ Mouse Testing
 
-* Real-time key detection
-* Simultaneous key press monitoring (NKRO testing)
-* Key press duration measurement
-* Active key visualization
+- Left / Right / Middle click
+- Polling rate
+- Scroll wheel
+- Coordinates
+- Pressure
+- Stylus support
 
-### Mouse & Pointer Testing
+---
 
-* Left, middle, and right click detection
-* Pointer coordinate tracking
-* Scroll wheel monitoring
-* Polling rate estimation
+✅ Keyboard Testing
 
-### Stylus Support
+- NKRO
+- Key history
+- Key duration
+- Live key visualization
+- Persistent max NKRO
 
-* Pressure detection
-* Tilt monitoring
-* Pen input recognition
+---
 
-### Touch Testing
+✅ Touch Testing
 
-* Multi-touch visualization
-* Touch point tracking
-* Touch identifier display
+- Multi-touch
+- Finger tracking
+- Canvas visualization
+- Haptics API
 
-### Gamepad Testing
+---
 
-* Controller connection detection
-* Button state monitoring
-* Analog stick visualization
-* Rumble testing (supported devices)
+✅ Controller Testing
 
-### Device Haptics
+- Xbox
+- PlayStation
+- Generic HID
+- Analog sticks
+- Buttons
+- Rumble
 
-* Browser vibration API testing
-* Mobile device feedback testing
+---
 
-## Technology Stack
+## Technology
 
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-* Lucide React Icons
+- React
+- Vite
+- TailwindCSS
+- Browser APIs
 
-## Use Cases
-
-* Peripheral diagnostics
-* Hardware validation
-* Troubleshooting input devices
-* Browser API experimentation
-* Educational demonstrations
+---
 
 ## Installation
 
 ```bash
-git clone https://github.com/ddhairyashahofficial/peripheral-tester.git
-cd peripheral-tester
+git clone https://github.com/ddhairyashahofficial/webtool-peripheral-tester.git
+
+cd webtool-peripheral-tester
+
 npm install
+
 npm run dev
 ```
 
-## Build
+---
+
+## Production Build
 
 ```bash
 npm run build
 ```
 
-## Deployment
+---
 
-Hosted using GitHub Pages with GitHub Actions.
+## GitHub Pages
 
-## Author
+Deployment is automatic using GitHub Actions.
 
-Dhairya Shah
+---
+
+## Browser Support
+
+| Browser | Support |
+|----------|----------|
+| Chrome | Excellent |
+| Edge | Excellent |
+| Firefox | Good |
+| Safari | Partial |
+
+---
+
+## Privacy
+
+All diagnostics run locally.
+
+No data is sent to any server.
+
+---
+
+## License
+
+MIT
