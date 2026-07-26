@@ -1,4 +1,4 @@
-# Peripheral Tester Pro
+# Peripheral Tester
 
 A Vite + React single-page application for testing keyboards, mice, touch, gamepads, styluses, and haptics in the browser.
 
