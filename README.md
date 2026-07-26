@@ -1,113 +1,40 @@
 # Peripheral Tester Pro
 
-Professional browser-based hardware diagnostic suite.
+A Vite + React single-page application for testing keyboards, mice, touch, gamepads, styluses, and haptics in the browser.
 
-![React](https://img.shields.io/badge/React-18-blue)
-![Vite](https://img.shields.io/badge/Vite-7-purple)
-![Tailwind](https://img.shields.io/badge/TailwindCSS-3-38BDF8)
-![License](https://img.shields.io/badge/License-MIT-green)
+## Requirements
 
----
+- Node.js 22 (see `.nvmrc`)
+- npm 10 or newer
 
-## Features
-
-✅ Mouse Testing
-
-- Left / Right / Middle click
-- Polling rate
-- Scroll wheel
-- Coordinates
-- Pressure
-- Stylus support
-
----
-
-✅ Keyboard Testing
-
-- NKRO
-- Key history
-- Key duration
-- Live key visualization
-- Persistent max NKRO
-
----
-
-✅ Touch Testing
-
-- Multi-touch
-- Finger tracking
-- Canvas visualization
-- Haptics API
-
----
-
-✅ Controller Testing
-
-- Xbox
-- PlayStation
-- Generic HID
-- Analog sticks
-- Buttons
-- Rumble
-
----
-
-## Technology
-
-- React
-- Vite
-- TailwindCSS
-- Browser APIs
-
----
-
-## Installation
+## Run locally
 
 ```bash
-git clone https://github.com/ddhairyashahofficial/webtool-peripheral-tester.git
-
-cd webtool-peripheral-tester
-
 npm install
-
 npm run dev
 ```
 
----
+Open the local URL Vite prints in the terminal.
 
-## Production Build
+## Production commands
 
 ```bash
+npm run lint
 npm run build
+npm run preview
 ```
 
----
+`npm run build` creates an optimized static production bundle in `dist/`. Deploy that folder to any static host with an SPA fallback if your host requires one.
 
-## GitHub Pages
+## Project layout
 
-Deployment is automatic using GitHub Actions.
+```text
+src/App.jsx       # Supplied application component; preserved without refactoring
+src/main.jsx      # React bootstrap
+src/index.css     # Tailwind entry stylesheet and safe global defaults
+.github/workflows # CI pipeline
+```
 
----
+## Browser capabilities
 
-## Browser Support
-
-| Browser | Support |
-|----------|----------|
-| Chrome | Excellent |
-| Edge | Excellent |
-| Firefox | Good |
-| Safari | Partial |
-
----
-
-## Privacy
-
-All diagnostics run locally.
-
-No data is sent to any server.
-
----
-
-## License
-
-MIT
+Peripheral APIs vary by browser and device. Use a current Chromium-based browser for the broadest Gamepad, Pointer, Touch, and Vibration API support. All diagnostic data stays in the browser.
